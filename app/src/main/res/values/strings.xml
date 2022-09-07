@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">30wrangler</string>
+    <string name="app_name">30Wrangler</string>
 
     <string name="day1">Day 1</string>
     <string name="location1">California</string>
@@ -7,18 +7,18 @@
 
     <string name="day2">Day 2</string>
     <string name="location2">Nebraska</string>
-    <string name="description2">nicola ride</string>
+    <string name="description2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</string>
 
     <string name="day3">Day 3</string>
     <string name="location3">Canada</string>
-    <string name="description3">vincenzo fa ridere</string>
+    <string name="description3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</string>
 
     <string name="day4">Day 4</string>
     <string name="location4">Ohio</string>
-    <string name="description4">mattia o raffaele porta il doblo</string>
+    <string name="description4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</string>
 
     <string name="day5">Day 5</string>
     <string name="location5">Nevada</string>
-    <string name="description5">semplicemente magico</string>
+    <string name="description5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</string>
 
 </resources>

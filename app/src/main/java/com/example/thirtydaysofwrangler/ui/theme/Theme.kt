@@ -9,7 +9,6 @@ import androidx.compose.runtime.Composable
 private val DarkColorPalette = darkColors(
     primary = md_theme_dark_primary,
     secondary = md_theme_dark_secondary,
-
     background = md_theme_dark_background,
     surface = md_theme_dark_surface,
 )
@@ -17,10 +16,9 @@ private val DarkColorPalette = darkColors(
 private val LightColorPalette = lightColors(
     primary = md_theme_light_primary,
     secondary = md_theme_light_secondary,
-
     background = md_theme_light_background,
     surface = md_theme_light_surface,
-    )
+)
 
 @Composable
 fun ThirtyDaysOfWranglerTheme(

@@ -19,15 +19,15 @@ val Typography = Typography(
     defaultFontFamily = Raleway,
     h1 = TextStyle(
         fontWeight = FontWeight.Bold,
-        fontSize = 35.sp
+        fontSize = 36.sp
     ),
     h2 = TextStyle(
-        fontWeight = FontWeight.Thin,
-        fontSize = 32.sp
-    ),
-    h3 = TextStyle(
         fontWeight = FontWeight.Normal,
         fontSize = 26.sp
+    ),
+    h3 = TextStyle(
+        fontWeight = FontWeight.Bold,
+        fontSize = 24.sp
     ),
     body1 = TextStyle(
         fontWeight = FontWeight.Thin,

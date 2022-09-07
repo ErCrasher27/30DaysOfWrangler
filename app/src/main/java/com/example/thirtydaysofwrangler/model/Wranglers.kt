@@ -33,5 +33,4 @@ val wranglers = listOf<Wrangler>(
         description = R.string.description5,
         wrangler = R.drawable.image5
     ),
-
-    )
+)

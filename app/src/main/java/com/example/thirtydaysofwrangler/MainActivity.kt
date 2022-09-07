@@ -78,24 +78,36 @@ fun ThirtyDaysOfWranglerApp() {
     }
 }
 
-/**
- * Composable that displays what the UI of the app looks like in light theme in the design tab.
- */
 @Preview
 @Composable
-fun WoofPreview() {
+fun ThirtyDaysOfWranglerAppDarkThemePreview() {
+    ThirtyDaysOfWranglerTheme(darkTheme = true) {
+        ThirtyDaysOfWranglerApp()
+    }
+}
+
+@Preview
+@Composable
+fun ThirtyDaysOfWranglerCardDarkPreview() {
+    ThirtyDaysOfWranglerTheme(darkTheme = true) {
+        WranglerCard(wrangler = wranglers[1], modifier = Modifier)
+    }
+}
+
+@Preview
+@Composable
+fun ThirtyDaysOfWranglerAppLightThemePreview() {
     ThirtyDaysOfWranglerTheme(darkTheme = false) {
         ThirtyDaysOfWranglerApp()
     }
 }
 
-/**
- * Composable that displays what ùthe UI of the app looks like in dark theme in the design tab.
- */
 @Preview
 @Composable
-fun WoofDarkThemePreview() {
-    ThirtyDaysOfWranglerTheme(darkTheme = true) {
-        ThirtyDaysOfWranglerApp()
+fun ThirtyDaysOfWranglerCardLightPreview() {
+    ThirtyDaysOfWranglerTheme(darkTheme = false) {
+        WranglerCard(wrangler = wranglers[1], modifier = Modifier)
     }
 }
+
+

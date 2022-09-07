@@ -12,6 +12,7 @@ import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -27,7 +28,7 @@ fun WranglerCard(wrangler: Wrangler, modifier: Modifier = Modifier) {
         modifier = modifier
             .padding(20.dp)
             .fillMaxSize(),
-        shape = MaterialTheme.shapes.large,
+        shape = MaterialTheme.shapes.medium,
         backgroundColor = MaterialTheme.colors.surface,
 
         ) {
@@ -49,7 +50,6 @@ fun WranglerCard(wrangler: Wrangler, modifier: Modifier = Modifier) {
                 style = MaterialTheme.typography.h2,
                 color = MaterialTheme.colors.primary
             )
-            Spacer(modifier = modifier.height(10.dp))
             Text(
                 modifier = modifier.align(Alignment.Start),
                 text = stringResource(id = wrangler.location),
@@ -58,7 +58,6 @@ fun WranglerCard(wrangler: Wrangler, modifier: Modifier = Modifier) {
             )
             Spacer(modifier = modifier.height(10.dp))
             ImageWrangler(wrangler.wrangler, wrangler.day)
-            Spacer(modifier = modifier.height(10.dp))
             WranglerItemButton(expanded = expanded, onClick = {
                 expanded = !expanded
             })
@@ -78,7 +77,7 @@ fun WranglerCard(wrangler: Wrangler, modifier: Modifier = Modifier) {
 @Composable
 fun ImageWrangler(wranglerImageId: Int, wranglerDayId: Int) {
     Box(
-        modifier = Modifier
+        modifier = Modifier.clip(MaterialTheme.shapes.medium)
     ) {
         Image(
             painter = painterResource(wranglerImageId),
